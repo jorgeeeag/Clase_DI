@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60b3dcf-0aba-4d94-8747-44bf45bcd401" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Inicial/src/For/Ejercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Inicial/src/For/Ejercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Inicial/src/For/Ejercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Inicial/src/For/Ejercicio4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Inicial/src/controller/EjerciciosFor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TEMA1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/TareaEjercicio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/Encargo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/Tarea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/TareaPersonal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/TareaProfesional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/Planificador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Lista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Planificable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Prioridad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Tarea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/TareaOcio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/TareaTrabajo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inicial/src/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/Entrada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inicial/src/controller/Ejercicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/controller/Ejercicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inicial/src/controller/EjerciciosSwicth.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/controller/EjerciciosSwicth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inicial/src/model/Encargo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inicial/src/model/Persona.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inicial/src/model/Tarea.java" beforeDir="false" />
-    </list>
+    <list default="true" id="c60b3dcf-0aba-4d94-8747-44bf45bcd401" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

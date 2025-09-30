@@ -94,6 +94,6 @@ public class Main {
                 default:
                     System.out.println("No existe");
             }
-        }while (opcion<8);
+        }while (opcion<7);
     }
 }

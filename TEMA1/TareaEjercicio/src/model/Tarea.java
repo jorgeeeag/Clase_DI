@@ -1,13 +1,15 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Objects;
-
-public class Tarea{
+//crear metodos de asignar a un encargo un responsable, para poder asignarlo debe estar previamente como entegrante
+abstract public class Tarea{
 
     //variables
     private String titulo, descripcion;
     private boolean prioritario,completada;
     private Persona[] encargados;
+    private ArrayList<Encargo>listaTareas;
 
     //constructores
     public Tarea(){
@@ -19,6 +21,7 @@ public class Tarea{
         this.descripcion=descripcion;
         this.prioritario=prioritario;
         encargados=new Persona[numeroPersonas];
+        listaTareas=new ArrayList<>();
     }
 
     public Tarea(String titulo, String descripcion, int numeroPersonas){
@@ -26,9 +29,11 @@ public class Tarea{
         this.titulo=titulo;
         this.descripcion=descripcion;
         encargados=new Persona[numeroPersonas];
+        listaTareas=new ArrayList<>();
     }
 
     //metodos -> getter, setter, toString
+
     public void asignarReasponsable(Persona persona){
         for (int i = 0; i < encargados.length; i++) {
             if (encargados[i]==null && !estaDNI(persona.getDni())){
@@ -77,8 +82,101 @@ public class Tarea{
         }
     }
 
-    public void crearEncargo(){
+    private Encargo estaEncargo(int id){
+        for (Encargo encargo :listaTareas){
+            if (encargo.getId()==id){ return encargo;
+            }
+        }
 
+        return null;
+    }
+
+
+    public void agregarEncargo(Encargo encargo){
+        if (estaEncargo(encargo.getId())!=null){
+            System.out.println("Error en el proceso");
+        }else {
+            listaTareas.add(encargo);
+            System.out.println("Agregado correctamente");
+        }
+    }
+
+    public void modificarEncargo(Encargo encargo) {
+        for (int i = 0; i < listaTareas.size(); i++) {
+            if (listaTareas.get(i).getId() == encargo.getId()) {
+                listaTareas.set(i, encargo);
+                System.out.println("Encargo modificado correctamente");
+                return;
+            }
+        }
+        System.out.println("Encargo no encontrado, no se puede modificar");
+    }
+
+    public void borrarEncargo(int id){
+        if (estaEncargo(id)!=null){
+            listaTareas.remove(estaEncargo(id));
+            System.out.println("borrado correctamente");
+        }else {
+            System.out.println("No esta en la lista");
+        }
+    }
+
+    public void listraEncargos(){
+        if(listaTareas.isEmpty()){
+            System.out.println("No hay tareas");
+        }else {
+            for (Encargo encargo:listaTareas){
+                encargo.mostrarDatos();            }
+        }
+    }
+
+    public void buscarEncargoID(int id){
+        for (Encargo encargo:listaTareas){
+            if (encargo.getId()==id){
+                encargo.mostrarDatos();
+            }
+        }
+        System.out.println("encargo no encontrado");
+    }
+
+    public void listarEncargosCompletados(){
+        for (Encargo encargo:listaTareas){
+            if (encargo.isCompletada()){
+                encargo.mostrarDatos();
+            }
+        }
+    }
+
+    public void listarIncompletas() {
+        boolean hayIncompletas = false;
+        for (Encargo encargo : listaTareas) {
+            if (!encargo.isCompletada()) {
+                System.out.println(encargo);
+                hayIncompletas = true;
+            }
+        }
+        if (!hayIncompletas) {
+            System.out.println("No hay tareas incompletas");
+        }
+    }
+
+    public void completarEncargo(int id){
+        if (estaEncargo(id)!=null){
+            estaEncargo(id).setCompletada(true);
+        }else {
+            System.out.println("El encargo no esta en la lista");
+        }
+    }
+
+    public void completarTarea(){
+        for (Encargo encargo:listaTareas){
+            if (!encargo.isCompletada()){
+                System.out.println("No se puede completar la tarea");
+                return;
+            }
+        }
+        completada=true;
+        System.out.println("Tarea completada con exito");
     }
     public String getTitulo() {
         return titulo;
@@ -111,6 +209,17 @@ public class Tarea{
     public void setCompletada(boolean completada) {
         this.completada = completada;
     }
+
+    public Persona[] getEncargados() {
+        return encargados;
+    }
+
+    public void setEncargados(Persona[] encargados) {
+        this.encargados = encargados;
+    }
+
+
+    public abstract void enviarRecordatorio();
 
     @Override
     public String toString() {

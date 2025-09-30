@@ -1,7 +1,7 @@
 package controller;
 
 import If.*;
-import Switch.EjercicioSwitch1;
+import Switch.*;
 
 public class EjerciciosSwicth {
     public void ejecutar(int numero) {

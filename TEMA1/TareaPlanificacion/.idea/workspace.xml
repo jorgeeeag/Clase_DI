@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c60b3dcf-0aba-4d94-8747-44bf45bcd401" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Inicial/src/For/Ejercicio1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inicial/src/For/Ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inicial/src/For/Ejercicio3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inicial/src/For/Ejercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inicial/src/controller/EjerciciosFor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/TareaEjercicio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/Encargo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/Tarea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/TareaPersonal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TareaEjercicio/src/model/TareaProfesional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Planificador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Lista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Planificable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Prioridad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Tarea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/TareaOcio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/TareaTrabajo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inicial/src/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/Entrada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/Switch/EjercicioSwitch4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inicial/src/controller/Ejercicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/controller/Ejercicios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inicial/src/controller/EjerciciosSwicth.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Inicial/src/controller/EjerciciosSwicth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inicial/src/model/Encargo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inicial/src/model/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inicial/src/model/Tarea.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="33Ea6QX07bq0nLZTLP23W8nNfiw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/jorge/Documents/GitHub/Clase_DI/TEMA1/TareaPlanificacion",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c60b3dcf-0aba-4d94-8747-44bf45bcd401" name="Changes" comment="" />
+      <created>1758884511149</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758884511149</updated>
+    </task>
+    <servers />
+  </component>
+</project>

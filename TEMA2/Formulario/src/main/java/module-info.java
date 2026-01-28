@@ -1,23 +1,20 @@
-module org.example.formulario {
+module org.example.formularioapp {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
 
     requires lombok;
+    requires java.desktop;
+    requires java.sql;
 
-    opens org.example.formulario to javafx.fxml;
+    opens org.example.formulario to javafx.fxml, java.sql;
     exports org.example.formulario;
     exports org.example.formulario.controller;
-    opens org.example.formulario.controller to javafx.fxml;
+    opens org.example.formulario.controller to javafx.fxml, java.sql;
 
+    opens org.example.formulario.model to lombok, java.sql;
     exports org.example.formulario.model;
-    opens org.example.formulario.model to lombok;
 }

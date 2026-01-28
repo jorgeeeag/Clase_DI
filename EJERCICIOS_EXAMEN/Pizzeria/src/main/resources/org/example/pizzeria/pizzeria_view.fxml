@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pizzeria.controller.PizzeriaController">
+   <top>
+      <Label text="Pedidos de la pizzeria" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="textFieldNombre" promptText="Indique su nombre" />
+                  <TextField fx:id="textFieldNumero" promptText="Indique su teléfono" />
+                  <ComboBox fx:id="comboBoxSeleccionar" maxWidth="1.7976931348623157E308" promptText="Seleccione el tipo de pizza" />
+                  <HBox prefHeight="37.0" prefWidth="300.0" spacing="20.0">
+                     <children>
+                        <RadioButton fx:id="radioButtonFamiliar" mnemonicParsing="false" text="Familiar" />
+                        <RadioButton fx:id="radioButtonMediano" mnemonicParsing="false" text="Mediana" />
+                        <RadioButton fx:id="radioButtonPequeña" mnemonicParsing="false" text="Pequeña" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="buttonRealizarPedido" mnemonicParsing="false" text="Realizar pedido" />
+                        <Button fx:id="buttonVerDetalles" mnemonicParsing="false" text="Ver detalles" />
+                        <Button fx:id="buttonQuitarPedidos" mnemonicParsing="false" text="Quitar pedido" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ListView fx:id="listViewPedidos" prefHeight="322.0" prefWidth="246.0" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </center>
+</BorderPane>

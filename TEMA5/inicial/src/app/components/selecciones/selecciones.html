@@ -1,0 +1,69 @@
+<h2>Componente selecciones</h2>
+<p>Vamos a evaluar la ejecucion de un elemento html dependiendo de una seleccion</p>
+<!--<span [ngSwitch]="seleccion">
+  <div *ngSwitchCase="'1'" class="alert alert-success" role="alert">Hola</div>
+  <div *ngSwitchCase="'2'" class="alert alert-danger" role="alert">Adios</div>
+
+  <div *ngSwitchDefault class="alert alert-warning" role="alert">Que</div>
+</span>-->
+
+<!--crear un formulario donde indqiue cual es el tipo de pago que se realiara en una compra.
+Para ello el formulario debera incluir los siguientes campos:
+-nombre
+-direccion de envio
+-direccion de facturacion
+-coste
+-tipo de pago: 
+bizum (input para meter el numero de tf)
+pago ordinario (inpur para introducir numero de tarjeta,cvv mes y año caducidad),
+transferencia (input con el numero del cliente)-->
+<input placeholder="Introduce el nombre" class="form-control mb-3 mt-3" [(ngModel)]="nombre" />
+<input
+  placeholder="Introduce la direccion de envio"
+  class="form-control mb-3 mt-3"
+  [(ngModel)]="direccionEnvio"
+/>
+<input
+  placeholder="Introduce la direccion de facturacion"
+  class="form-control mb-3 mt-3"
+  [(ngModel)]="direccionFacturacion"
+/>
+<input
+  placeholder="Introduce el coste"
+  type="number"
+  class="form-control mb-3 mt-3"
+  [(ngModel)]="coste"
+/>
+<select class="form-select mt-3 mb-3" [(ngModel)]="tipoDePago">
+  <option value="1">Bizum</option>
+  <option value="2">transferencia</option>
+  <option value="3">Tarjeta</option>
+</select>
+@switch (tipoDePago) {
+  @case ('1') {
+    <input class="form-control" placeholder="Introduce telefono" />
+    <div class="alert alert-success" role="alert">
+      El producto de {{ nombre }} ha sido enviado correctamente con un coste adicional
+    </div>
+  }
+  @case ('2') {
+    <input class="form-control" placeholder="Introduce cuenta corriente" />
+    <div class="alert alert-success" role="alert">
+      El producto de {{ nombre }} ha sido enviado correctamente con un coste adicional
+    </div>
+  }
+  @case ('3') {
+    <input class="form-control" placeholder="Introduce numero tarjeta" />
+    <input class="form-control" type="date" placeholder="Introduce fecha caducidad" />
+    <input class="form-control" type="number" placeholder="Introduce numero de seguridad" />
+    <div class="alert alert-success" role="alert">
+      El producto de {{ nombre }} ha sido enviado correctamente con un coste adicional
+    </div>
+  }
+}
+<button class="btn btn-primary mt-3 mb-3" (click)="validarBoton()">Validar</button>
+
+<!--una vez le da al boton de validar, el producto se envia al usuario NOMBRE, con un coste 
+xxx (+5% si es transferencia) a la direccion de facturacion xxxx
+los datos de pago son: ordinario (tarjeta xxx xx/xx), bizum (tef xxx), transferencia (cuenta xxx)
+-->

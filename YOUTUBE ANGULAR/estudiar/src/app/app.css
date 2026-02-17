@@ -1,0 +1,12 @@
+/* Estilos personalizados */
+.container {
+  max-width: 800px;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.alert {
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,12 @@
+@for (item of peliculas; track item.id) {
+  <div class="card" style="width: 18rem">
+    <img [src]="item.genero | imagenesGenero" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ item.titulo }}</h5>
+      <p class="card-text">
+        {{ item.descripcion }}
+      </p>
+      <button (click)="agregarFavoritos(item)" class="btn btn-primary">Favorito</button>
+    </div>
+  </div>
+}

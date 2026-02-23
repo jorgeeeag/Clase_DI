@@ -1,0 +1,23 @@
+<div class="row">
+  @for (item of listaLibros; track $index) {
+    <div class="col-md-4 mb-4">
+      <div class="card" style="width: 18rem">
+        <img [src]="item.Pages! | imagenesLibros" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.Title }}</h5>
+          <p class="card-text">{{ item.Year }}</p>
+          <div class="d-flex">
+            <div id="verDetalles"></div>
+            <button (click)="verDetalle(item)" class="btn btn-primary">Ver detalle</button>
+            <button (click)="agregarAlCarrito(item)" class="btn btn-primary">
+              Agregar al carrito
+            </button>
+          </div>
+          @for (item of item.villains; track $index) {
+            <p class="card-text">{{ item.name }}</p>
+          }
+        </div>
+      </div>
+    </div>
+  }
+</div>

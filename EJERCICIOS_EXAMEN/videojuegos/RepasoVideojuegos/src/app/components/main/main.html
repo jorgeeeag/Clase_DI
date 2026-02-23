@@ -1,0 +1,18 @@
+<div class="row">
+  @for (item of listaVideojuegos; track $index) {
+    <div class="col-md-4 mb-4">
+      <div class="card" style="width: 18rem">
+        <img [src]="[item.horas! | imagenesVideojuego]" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.nombre }}</h5>
+          <p class="card-text">{{ item.anio }}</p>
+          <p class="card-text">{{ item.plataforma }}</p>
+          <a (click)="irAlDetalle(item.id!)" class="btn btn-primary">Ver detalle</a>
+          <button (click)="anadirFavoritos(item)" class="btn btn-primary">
+            Añadir a favoritos
+          </button>
+        </div>
+      </div>
+    </div>
+  }
+</div>

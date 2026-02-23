@@ -1,0 +1,13 @@
+@for (item of Libro; track $index) {
+  <div class="card" style="width: 18rem">
+    <img [src]="listalibros | librosImagenes" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">
+        {{ li }}
+      </p>
+      <button class="btn btn-primary">Ver detalle</button>
+      <button class="btn btn-primary">Agregar carrito</button>
+    </div>
+  </div>
+}

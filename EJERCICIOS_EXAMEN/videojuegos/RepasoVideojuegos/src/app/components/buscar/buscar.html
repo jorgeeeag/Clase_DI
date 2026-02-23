@@ -1,0 +1,21 @@
+<select class="form-select mb-4" [(ngModel)]="plataforma">
+  <option value="">Seleccione plataforma</option>
+  <option value="Nintendo Switch">Nintendo Switch</option>
+  <option value="PlayStation 4">PlayStation 4</option>
+  <option value="PlayStation 5">PlayStation 5</option>
+  <option value="PC">PC</option>
+</select>
+
+<div class="row">
+  @for (item of listaVideojuegosBuscar; track $index) {
+    @if (plataforma == '' || item.plataforma == plataforma) {
+      <div class="card" style="width: 18rem">
+        <img [src]="[item.horas! | imagenesVideojuego]" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.nombre }}</h5>
+          <p class="card-text">{{ item.plataforma }}</p>
+        </div>
+      </div>
+    }
+  }
+</div>

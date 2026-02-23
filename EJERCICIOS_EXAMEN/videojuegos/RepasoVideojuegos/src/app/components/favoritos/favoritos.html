@@ -1,0 +1,20 @@
+<div class="row">
+  @for (item of listaFavorita; track $index) {
+    <div class="col-md-4 mb-4">
+      <div class="card" style="width: 18rem">
+        <img [src]="[item.horas! | imagenesVideojuego]" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.nombre }}</h5>
+          <p class="card-text">{{ item.plataforma }}</p>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+
+@if (listaFavorita.length > 0) {
+  <div class="alert alert-primary" role="alert">
+    Tienes {{ listaFavorita.length }} juegos en favoritos
+  </div>
+  <button (click)="vaciarCarrito()" class="btn btn-primary">Comprar carrito</button>
+}
